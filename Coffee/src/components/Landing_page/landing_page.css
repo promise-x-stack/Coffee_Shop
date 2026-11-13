@@ -1,0 +1,89 @@
+:root {
+  --text: #9ca3af;
+  --text-h: #f3f4f6;
+  --bg: #16171d;
+  --border: #2e303a;
+  --code-bg: #1f2028;
+  --accent: #c084fc;
+  --accent-bg: rgba(192, 132, 252, 0.15);
+  --accent-border: rgba(192, 132, 252, 0.5);
+  --social-bg: rgba(47, 48, 58, 0.5);
+  --shadow: rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+}
+
+.landing-page{
+  background-image: url("bg_mg/25281985-aromatic-coffee-swirl-hd-desktop.jpg");
+  background-color: #16171def;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1cm;
+}
+.lading-page-container{
+  height: 75%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.text{
+  padding: 10px;
+  margin-top: 1,5cm;
+}
+.text p{
+  width: 90%;
+  font-size: 1.2rem;
+}
+.threed-module{
+  height: 50%;
+  width: 80%;
+}
+.paragraph{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+}
+.paragraph h5{
+  width: 80%;
+}
+@media(min-width: 1000px){
+  .threed-module{
+    width: 50%;
+  }
+}
+@media(min-width: 1200px){
+  .text h1{
+    animation: loader ease 7s forwards;
+  }
+  .text p{
+    animation: loader ease 3s forwards;
+  }
+  .paragraph{
+    animation: loadertwo ease 7s forwards;
+  }
+  @keyframes loader {
+    from{
+      transform: translatex(-30cm);
+    }
+  }
+  @keyframes loadertwo {
+    from{
+      transform: translatey(10cm);
+    }
+  }
+}
+Canvas{
+  cursor: grab;
+}

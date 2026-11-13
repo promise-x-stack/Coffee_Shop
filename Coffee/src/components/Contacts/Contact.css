@@ -1,0 +1,116 @@
+:root {
+  --text: #9ca3af;
+  --text-h: #f3f4f6da;
+  --bg: #16171d;
+  --border: #2e303a;
+  --code-bg: #1f2028;
+  --accent: #c084fc;
+  --accent-bg: rgba(192, 132, 252, 0.15);
+  --accent-border: rgba(192, 132, 252, 0.5);
+  --social-bg: rgba(47, 48, 58, 0.5);
+  --shadow: rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+}
+.contuct-wraper{
+  background-image: url("bg_mg/25281985-aromatic-coffee-swirl-hd-desktop.jpg");
+  background-color: #16171d86;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  border-radius: 50px 50px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container{
+  height: 95%;
+  width: 95%;
+  background-color: transparent;
+  backdrop-filter: blur(20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1cm;
+  border-radius: 20px;
+  backdrop-filter: blur(40px);
+  
+}
+.contact-div{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5cm;
+  padding: 5px;
+}
+.contuct-content ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.3cm;
+}
+.contuct-content ul li{
+  list-style: none;
+  padding: 10px;
+}
+.form-container{
+  width: 100%;
+}
+.form-container div{
+  width: 90%;
+  height: 1.5cm;
+  border-radius: 10px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5cm;
+}
+.form-container div input{
+  width: 70%;
+  height: 90%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: rgb(151, 167, 189);
+  padding: 5px;
+}
+
+.form-container div button{
+  height: 90%;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  transition: 0.60s;
+  background-color: #2e303a;
+  color: white;
+}
+.form-container div button:hover{
+  background: linear-gradient(120deg, orange, yellow);
+  cursor: pointer;
+  transition: 0.60s;
+  color: #2e303a;
+}
+@media(min-width: 1000px){
+  .contact-container{
+    flex-direction: row;
+    height: 80%;
+    width: 80%;
+  }
+  .contact-div{
+    width: 50%;
+  }
+}

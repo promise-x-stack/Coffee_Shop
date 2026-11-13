@@ -1,0 +1,63 @@
+:root {
+  --text: #9ca3af;
+  --text-h: #f3f4f6;
+  --bg: #16171d;
+  --border: #2e303a;
+  --code-bg: #1f2028;
+  --accent: #c084fc;
+  --accent-bg: rgba(192, 132, 252, 0.15);
+  --accent-border: rgba(192, 132, 252, 0.5);
+  --social-bg: rgba(47, 48, 58, 0.5);
+  --shadow: rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+}
+
+.about-container{
+  background-image: url("bg_mg/25281985-aromatic-coffee-swirl-hd-desktop.jpg");
+  background-color: #16171def;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1cm;
+  border-radius: 0px 0px 50px 50px;
+}
+.content-container{
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2cm;
+}
+.back-img{
+  height: 50%;
+  width: 50vh;
+  background-image: url("bg_mg/engagement_12761146.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   background-color: #17111fdc;
+  background-blend-mode: multiply;
+  border-radius: 20px;
+  transition: 0.60s;
+}
+.back-img:hover{
+  transform: rotate(-50deg);
+  transition: 0.60s;
+}
+
+@media (min-width: 950px){
+  .text-content{
+    width: 50%;
+  }
+}
